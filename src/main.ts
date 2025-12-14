@@ -6,7 +6,10 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.use(cookieParser());
   app.enableCors({
-    origin: "*",
+    origin:  [
+    'https://frontend-seven-sable-29.vercel.app/',
+    'http://localhost:5173',
+  ],
     credentials:true
   });
 
