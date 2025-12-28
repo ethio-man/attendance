@@ -19,7 +19,7 @@ import { AuthGuard } from '../common/guard/auth.guard.js';
 import { Role } from '../common/decorators/role.decorator.js';
 
 @Controller('user')
-@UseGuards(AuthGuard, RoleGuard)
+//@UseGuards(AuthGuard, RoleGuard)
 @Role(['super-admin'])
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
