@@ -19,7 +19,7 @@ import { RoleGuard } from '../common/guard/role.guard.js';
 import { Role } from '../common/decorators/role.decorator.js';
 
 @Controller('course_date')
-@UseGuards(AuthGuard, RoleGuard)
+//@UseGuards(AuthGuard, RoleGuard)
 @Role(['super-admin'])
 export class CourseDateController {
   constructor(private readonly courseDateService: CourseDateService) {}
