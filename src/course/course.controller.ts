@@ -19,7 +19,7 @@ import { Role } from '../common/decorators/role.decorator.js';
 import { Cacheable } from '../common/decorators/cache.decorator.js';
 
 @Controller('course')
-@UseGuards(AuthGuard, RoleGuard)
+//@UseGuards(AuthGuard, RoleGuard)
 @Role(['super-admin'])
 export class CourseController {
   constructor(private readonly courseService: CourseService) {}
