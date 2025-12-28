@@ -20,7 +20,7 @@ import { RoleGuard } from '../common/guard/role.guard.js';
 import { Cacheable } from '../common/decorators/cache.decorator.js';
 
 @Controller('batches')
-@UseGuards(AuthGuard, RoleGuard)
+//@UseGuards(AuthGuard, RoleGuard)
 @Role(['super-admin'])
 export class BatchesController {
   constructor(private readonly batchesService: BatchesService) {}
